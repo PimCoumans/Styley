@@ -7,6 +7,7 @@
 //
 
 #import "STLViewController.h"
+@import Styley;
 
 @interface STLViewController ()
 
@@ -17,7 +18,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSDictionary *styles = @{@0 : @{NSFontAttributeName: [UIFont boldSystemFontOfSize:35]},
+                                                 @1 : @{NSForegroundColorAttributeName: [UIColor redColor],
+                                                        NSUnderlineStyleAttributeName: @0x02}};
+    NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"This is a [0](quick) [1](test)" styles:styles];
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.attributedText = string;
+    label.frame = CGRectMake(20, 100, CGRectGetWidth(self.view.bounds) - 40, CGRectGetHeight(self.view.bounds) - 200);
+    label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning

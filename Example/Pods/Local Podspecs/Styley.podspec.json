@@ -1,0 +1,19 @@
+{
+  "name": "Styley",
+  "version": "0.1.0",
+  "summary": "A short description of Styley.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Styley",
+  "license": "MIT",
+  "authors": {
+    "Pim Coumans": "pim@pixelrock.nl"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Styley.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Styley/Classes/**/*"
+}

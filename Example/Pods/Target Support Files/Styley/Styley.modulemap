@@ -1,0 +1,6 @@
+framework module Styley {
+  umbrella header "Styley-umbrella.h"
+
+  export *
+  module * { export * }
+}
