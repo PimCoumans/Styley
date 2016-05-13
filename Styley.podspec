@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "Styley"
   s.version          = "0.1.0"
-  s.summary          = "A short description of Styley."
+  s.summary          = "Easy custom styling for NSAttributedStrings"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Instead of having to deal with substring and NSRanges, just tag some parts of you string with a number and provide a custom attributes dictionary for those numbers. Better description soon!
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/Styley"
+  s.homepage         = "https://github.com/PimCoumans/Styley"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Pim Coumans" => "pim@pixelrock.nl" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/Styley.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/PimCoumans/Styley.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/pimcoumans'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'Styley/Classes/**/*'
   
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'Styley' => ['Styley/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Styley/Classes/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

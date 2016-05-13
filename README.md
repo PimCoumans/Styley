@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/Styley.svg?style=flat)](http://cocoapods.org/pods/Styley)
 [![Platform](https://img.shields.io/cocoapods/p/Styley.svg?style=flat)](http://cocoapods.org/pods/Styley)
 
+Instead of having to deal with substring and NSRanges, just tag some parts of you string with a number and provide a custom attributes dictionary for those numbers. Better description soon!
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
